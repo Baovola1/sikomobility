@@ -1,8 +1,22 @@
 import backgroundImage from "../assets/pj1.jpg";
 import Avis from "../components/Avis";
 import Join from "../components/Join";
+import VanillaTilt from "vanilla-tilt";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    const cards = document.querySelectorAll(".card");
+    if (cards.length !== 0) {
+      VanillaTilt.init(Array.from(cards) as HTMLElement[], {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+      });
+    }
+  }, []);
+
   return (
     <>
       {/* section 1*/}
@@ -14,7 +28,7 @@ export default function Home() {
           Découvrez notre gamme de <br/> services pour toutes les mobilités
         </div>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-6">
-          <div className="flex flex-col mb-4 md:mb-0">
+          <div className="card flex flex-col mb-4 md:mb-0">
             <div className="relative p-6 rounded-lg shadow-md w-full h-96 overflow-hidden ">
               <img
                 src={backgroundImage}
@@ -37,7 +51,7 @@ export default function Home() {
             </div>
           </div>
           {/*card2*/}
-          <div className="flex flex-col mb-4 md:mb-0">
+          <div className="card flex flex-col mb-4 md:mb-0">
             <div className="relative p-6 rounded-lg shadow-md w-full h-96 overflow-hidden">
               <img
                 src={backgroundImage}
@@ -47,7 +61,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-black bg-opacity-40"></div>
               <div className="relative z-10 p-6 flex flex-col h-full justify-end">
                 {/* Div englobante pour le h2 et le paragraphe */}
-                <div className=" flex flex-col p-2">
+                <div className="  flex flex-col p-2">
                   <h2 className="md:text-xl font-semibold text-white mb-2">
                     FINANCEMENT 12 A 60 MOIS
                   </h2>
@@ -60,7 +74,7 @@ export default function Home() {
             </div>
           </div>
           {/*card3*/}
-          <div className="flex flex-col mb-4 md:mb-0">
+          <div className="card flex flex-col mb-4 md:mb-0">
             <div className="relative p-6 rounded-lg shadow-md w-full h-96 overflow-hidden">
               <img
                 src={backgroundImage}
