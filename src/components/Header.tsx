@@ -33,7 +33,7 @@ export default function Header() {
         </button>
 
         {/* Liens du menu */}
-        <nav className={`md:flex items-center space-x-4 ${menuOpen ? 'flex' : 'hidden'} flex-col absolute md:relative md:top-auto md:left-auto top-full left-0 w-full md:w-auto bg-blue-500 md:bg-transparent z-10 `}>
+        <nav className={`md:flex items-center space-x-4 ${menuOpen ? 'flex' : 'hidden'} flex-col absolute md:relative md:top-auto md:left-auto top-full left-0 w-full md:w-auto bg-slate-500/50 md:bg-transparent z-10 `}>
           
           <ul className="flex flex-col md:flex-row items-center space-x-4 text-white">
             <li>
@@ -79,7 +79,7 @@ export default function Header() {
               </div>
             </li>
             <li>
-              <button className="bg-blue-700 hover:bg-blue-800 text-white font-semibold py-1 px-3 rounded mb-2">
+              <button className="bg-blue-700 hover:bg-blue-800 text-white  py-2 px-3 rounded mb-2 center">
                 Simulation
               </button>
             </li>
