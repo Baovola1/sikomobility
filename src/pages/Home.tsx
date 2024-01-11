@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <>
-      {/* section 1*/}
+    
 
       {/*card1*/}
 
