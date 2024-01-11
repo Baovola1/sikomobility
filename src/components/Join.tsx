@@ -1,10 +1,10 @@
 export default function Join() {
   return (
     <>
-      <div className="container mx-auto bg-slate-700 m-10 p-8 min-w-80 min-h-80">
+      <div className="container mx-auto bg-slate-700 m-10 p-8 min-w-80 min-h-80 border border-gray-200 rounded-lg shadow">
         {/* Titre centré */}
         <div className="flex justify-center mb-4">
-          <h2 className="text-white text-3xl font-bold">Nous rejoindre</h2>
+          <h2 className="text-white text-3xl font-bold ">Nous rejoindre</h2>
         </div>
 
         {/* Paragraphe et bouton alignés à gauche */}

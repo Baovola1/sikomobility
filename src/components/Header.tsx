@@ -13,7 +13,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="bg-slate-800 relative">
+      <header className="bg-slate-800  relative ">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo et titre */}
         <div className="flex items-center gap-4">
