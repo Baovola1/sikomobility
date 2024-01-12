@@ -19,7 +19,7 @@ export default function Avis() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    centerPadding:'20px',
+    centerPadding:'15px',
     centerMode: true,
     responsive: [
       {
