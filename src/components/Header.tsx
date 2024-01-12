@@ -13,7 +13,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="bg-slate-800  relative ">
+      <header className="bg-slate-800  relative" style={{ position: 'sticky', bottom: 0 }}>
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo et titre */}
         <div className="flex items-center gap-4">
@@ -33,11 +33,10 @@ export default function Header() {
         </button>
 
         {/* Liens du menu */}
-        <nav className={`md:flex items-center space-x-4 ${menuOpen ? 'flex' : 'hidden'} flex-col absolute md:relative md:top-auto md:left-auto top-full left-0 w-full md:w-auto bg-slate-500/50 md:bg-transparent z-10 `}>
-          
+        <nav className={`md:flex items-center space-x-4 ${menuOpen ? 'flex' : 'hidden'} flex-col absolute md:relative md:top-auto md:left-auto top-full left-0 w-full md:w-auto bg-slate-500/50 md:bg-transparent z-10 `}> 
           <ul className="flex flex-col md:flex-row items-center space-x-4 text-white">
             <li>
-              <Link to="/espace-marchand" className="hover:text-blue-300">
+              <Link to="/marchand" className="hover:text-blue-300">
                 Espace Marchand
               </Link>
             </li>

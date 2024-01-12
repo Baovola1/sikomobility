@@ -1,11 +1,10 @@
-import { BrowserRouter,Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-
+import Marchand from "./pages/Marchand";
+import Layout from "./components/Layout";
 
 function App() {
   useEffect(() => {
@@ -15,15 +14,16 @@ function App() {
     });
   }, []);
 
-  return(
+  return (
     <BrowserRouter>
-    <Header/>
-    <Routes>
-      <Route path="/" element={<Home/>}/>
-    </Routes>
-    <Footer/>
+      
+      <Routes>
+        <Route path="/" element={<Layout><Home/></Layout>} />
+        <Route path="/marchand" element={<Marchand />} />
+      </Routes>
+     
     </BrowserRouter>
-  )
+  );
 }
 
 export default App;
