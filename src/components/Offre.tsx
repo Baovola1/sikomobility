@@ -13,17 +13,17 @@ export default function Offre() {
         >
           <ContentOffre 
             title="PAIEMENT 3/4/10 FOIS"
-            text="Faites un paiement en 3, 4 ou 10 fois en carte bleue. C'est sans justificatif."
+            description="Faites un paiement en 3, 4 ou 10 fois en carte bleue. C'est sans justificatif."
             backgroundImage={backgroundImage}
           />
           <ContentOffre
             title="FINANCEMENT 12 A 60 MOIS"
-            text="Faites une demande de financement de 12 à 60 fois.Obtenez un accord d'une de nos banques partenaires."
+            description="Faites une demande de financement de 12 à 60 fois.Obtenez un accord d'une de nos banques partenaires."
             backgroundImage={backgroundImage}
           />
           <ContentOffre
             title="FORFAITS MOBILITE"
-            text="Souscrivez à un abonnement assurance, assistance,garantie ou maintenance.Sans engagement."
+            description="Souscrivez à un abonnement assurance, assistance,garantie ou maintenance.Sans engagement."
             backgroundImage={backgroundImage}
           />
         </div>

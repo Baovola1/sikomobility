@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 
 interface ContentOffreProps {
   title: string;
-  text: string;
+  description: string;
   backgroundImage: string;
 }
 
 
-const ContentOffre: React.FC<ContentOffreProps> = ({ title, text, backgroundImage }) => {
+const ContentOffre: React.FC<ContentOffreProps> = ({ title,  description, backgroundImage }) => {
   return (
     <Link to="/" className="card flex flex-col mb-4 md:mb-0 transform transition-all hover:scale-105 duration-700">
     <div className="relative p-6 rounded-lg shadow-md w-full h-96 overflow-hidden">
@@ -26,7 +26,7 @@ const ContentOffre: React.FC<ContentOffreProps> = ({ title, text, backgroundImag
             {title}
           </h2>
           <p className="text-gray-300 text-sm leading-snug">
-            {text}
+            { description}
           </p>
         </div>
       </div>
