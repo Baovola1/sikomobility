@@ -1,4 +1,12 @@
+import { useNavigate } from "react-router-dom";
+
 export default function Join() {
+ const navigate = useNavigate();
+
+ const handelClick = ()=>{
+  navigate('/marchand')
+ }
+
   return (
     <>
       <div className="container mx-auto bg-slate-700 m-10 p-8 min-w-80 min-h-80 border border-gray-200 rounded-lg shadow">
@@ -15,7 +23,7 @@ export default function Join() {
             clients. Augmentez votre chiffre d'affaire avec notre solution en
             financement.
           </p>
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center">
+          <button onClick={handelClick} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center">
             <span>Devenir Partenaire</span>
             <svg
               fill="none"

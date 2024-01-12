@@ -18,14 +18,14 @@ export default function Footer() {
               <p className="mb-2">contact@sikomobility.com</p>
               <p className="mb-2">86 rue Dutot, 75015 Paris</p>
               <div className="flex space-x-4">
-                <Link to="/facebook" aria-label="Facebook">
+                <Link to="/" aria-label="Facebook">
                   <FontAwesomeIcon
                     icon={faFacebook}
                     size="lg"
                     className="text-green-400"
                   />
                 </Link>
-                <Link to="/twitter" aria-label="Twitter">
+                <Link to="/" aria-label="Twitter">
                   <FontAwesomeIcon
                     icon={faTwitter}
                     size="lg"
