@@ -12,7 +12,7 @@ interface ContentOffreProps {
 const ContentOffre: React.FC<ContentOffreProps> = ({ title,  description, backgroundImage }) => {
   return (
     <Link to="/" className="card flex flex-col mb-4 md:mb-0 transform transition-all hover:scale-105 duration-700">
-    <div className="relative p-6 rounded-lg shadow-md w-full h-96 overflow-hidden">
+    <div className="relative p-6 rounded-lg shadow-md w-full overflow-hidden min-w-[256px] h-[80vh]">
       <img
         src={backgroundImage}
         alt="Background"
