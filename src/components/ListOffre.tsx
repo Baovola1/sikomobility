@@ -2,14 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-interface ContentOffreProps {
+interface ListOffreProps {
   title: string;
   description: string;
   backgroundImage: string;
 }
 
 
-const ContentOffre: React.FC<ContentOffreProps> = ({ title,  description, backgroundImage }) => {
+const ListOffre: React.FC<ListOffreProps> = ({ title,  description, backgroundImage }) => {
   return (
     <Link to="/" className="card flex flex-col mb-4 md:mb-0 transform transition-all hover:scale-105 duration-700">
     <div className="relative p-6 rounded-lg shadow-md w-full overflow-hidden min-w-[256px] h-[80vh]">
@@ -22,7 +22,7 @@ const ContentOffre: React.FC<ContentOffreProps> = ({ title,  description, backgr
       <div className="relative z-10 p-6 flex flex-col justify-between h-full">
         <div></div> {/* Ce div vide crée de l'espace en haut, centré verticalement le contenu */}
         <div className="p-2">
-          <h2 className="text-xl font-semibold text-white mb-2 leading-tight">
+          <h2 className="text-xl font-semibold text-white mb-2 leading-tight uppercase">
             {title}
           </h2>
           <p className="text-gray-300 text-sm leading-snug">
@@ -35,5 +35,5 @@ const ContentOffre: React.FC<ContentOffreProps> = ({ title,  description, backgr
   );
 };
 
-export default ContentOffre;
+export default ListOffre;
 

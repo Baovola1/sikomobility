@@ -3,7 +3,7 @@ import Avatar2 from "../assets/avatar2.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
-import ContentAvis from "./ContentAvis";
+import ListAvis from "./ListAvis";
 
 
 
@@ -43,7 +43,7 @@ export default function Avis() {
       username: "@Robin Mourier",
       userImage: Avatar2,
       comment: "Simple, rapide et efficace ! Une équipe à l'écoute ! Je recommande vivement !",
-      rating: 5.0,
+      rating: 4.0,
       date: "2023-09-19"
     },
     {
@@ -57,7 +57,7 @@ export default function Avis() {
       username: "@Robin Mourier",
       userImage: AvatarImage,
       comment: "Simple, rapide et efficace ! Une équipe à l'écoute ! Je recommande vivement !",
-      rating: 5.0,
+      rating: 4.5,
       date: "2023-09-19"
     },
   ];
@@ -72,7 +72,7 @@ export default function Avis() {
         </div>
         <Slider {...settings}>
           {avisData.map((avis, index) => (
-            <ContentAvis
+            <ListAvis
               key={index}
               username={avis.username}
               userImage={avis.userImage}
