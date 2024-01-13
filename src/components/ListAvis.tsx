@@ -4,7 +4,7 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { faStarHalfAlt } from '@fortawesome/free-solid-svg-icons';
 
 
-// Props interface
+
 interface ListAvisProps {
   username: string;
   userImage: string;

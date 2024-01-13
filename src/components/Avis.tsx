@@ -66,8 +66,8 @@ export default function Avis() {
   return (
     <>
      
-     <div className="container mx-auto bg-slate-700 m-10 p-8 min-w-96 min-h-96 ">
-        <div className="text-white text-3xl mb-6 text-center font-bold">
+     <div className="container mx-auto  m-10 p-8 min-w-96 min-h-96 ">
+        <div className="text-white text-5xl mb-6 text-center font-extrabold">
           Ils nous ont fait confiance !<br />À votre tour !
         </div>
         <Slider {...settings}>

@@ -11,7 +11,7 @@ export default function Offre() {
   return (
     <>
       <div className="container mx-auto px-4 py-8  m-7">
-        <div className="text-white text-center font-bold text-4xl mb-6 bg">
+        <div className="text-white text-center font-extrabold text-5xl mb-6 bg">
           Découvrez notre gamme de <br /> services pour toutes les mobilités
         </div>
         <div

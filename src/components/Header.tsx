@@ -43,7 +43,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="bg-slate-800 relative ">
+      <header className="bg-slate-800 relative border-b-2 border-gray-500">
         <div className="container mx-auto flex items-center justify-between py-4 px-6">
           {/* Logo et titre */}
           <div className="flex items-center gap-4">
@@ -76,7 +76,7 @@ export default function Header() {
           >
             <ul className="flex flex-col md:flex-row items-center space-x-4 text-white justify-center">
               <li>
-                <Link to="/marchand" className="hover:text-blue-300 text-lg hover:underline">
+                <Link to="/marchand" className="hover:text-blue-300 text-lg ">
                   Espace Marchand
                 </Link>
               </li>
@@ -87,7 +87,7 @@ export default function Header() {
                     onClick={toggleDropdown}
                     id="dropdownNavbarLink"
                     data-dropdown-toggle="dropdownNavbar"
-                    className="flex items-center justify-between w-full py-2 px-3  text-white  hover:text-blue-300 md:hover:bg-transparent md:border-0 md:hover:text-blue-300 md:p-0 md:w-auto text-lg hover:underline"
+                    className="flex items-center justify-between w-full py-2 px-3  text-white  hover:text-blue-300 md:hover:bg-transparent md:border-0 md:hover:text-blue-300 md:p-0 md:w-auto text-lg "
                   >
                     Nos Services
                     <svg
