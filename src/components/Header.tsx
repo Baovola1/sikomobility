@@ -80,7 +80,7 @@ export default function Header() {
                 <div className="absolute hidden group-hover:block bg-blue-800/30 text-white py-2 rounded-lg backdrop-blur-sm border border-white/10 shadow-lg min-w-[450px] min-h-[30vh] ">
                   <div className="grid grid-cols-1 gap-1 md:grid-cols-2 md:gap-4">
                     {/* card1*/}
-                    <Link to= "/" className="border border-white p-4 rounded-lg m-2 ">
+                    <Link to= "/" className="border border-white p-4 rounded-lg m-2 hover:scale-105 duration-700">
                       <FontAwesomeIcon icon={faTruckMedical} />
 
                       <h4 className="text-lg font-bold">Assurance</h4>
@@ -90,7 +90,7 @@ export default function Header() {
                       </p>
                     </Link>
                     {/* card2*/}
-                    <Link to= "/" className="border border-white p-4 rounded-lg m-2 ">
+                    <Link to= "/" className="border border-white p-4 rounded-lg m-2 hover:scale-105 duration-700">
                       <FontAwesomeIcon icon={faPhone} />
                       <h4 className="text-lg font-bold">Assistance</h4>
                       <p>
@@ -99,7 +99,7 @@ export default function Header() {
                       </p>
                     </Link>
                     {/* card3*/}
-                    <Link to= "/" className="border border-white p-4 rounded-lg m-2">
+                    <Link to= "/" className="border border-white p-4 rounded-lg m-2 hover:scale-105 duration-700">
                       <FontAwesomeIcon icon={faGear} />
                       <h4 className="text-lg font-bold">Maintenance</h4>
                       <p>
@@ -108,7 +108,7 @@ export default function Header() {
                       </p>
                     </Link>
                     {/* card4*/}
-                    <Link to= "/" className="border border-white p-4 rounded-lg m-2">
+                    <Link to= "/" className="border border-white p-4 rounded-lg m-2 hover:scale-105 duration-700">
                       <FontAwesomeIcon icon={faPenToSquare} />
                       <h4 className="text-lg font-bold">
                         Extension de garantie
@@ -122,7 +122,7 @@ export default function Header() {
                 </div>
               </li>
               <li>
-                <button className="bg-blue-700 hover:bg-blue-800 text-white  py-2 px-3 rounded mb-2 center">
+                <button className="bg-slate-800 hover:bg-blue-800 text-blue-700 py-2 px-3 rounded-lg mb-2 center border-4 border-blue-700 hover:text-white">
                   Simulation
                 </button>
               </li>
