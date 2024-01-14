@@ -25,21 +25,21 @@ const ModalService: React.FC<ServiceProps> = ({ isOpen, toggle }) => {
   return (
     <>
       <div
-        className="fixed inset-0 bg-blue bg-opacity-50 overflow-y-auto h-full w-full"
+        className="fixed inset-0 bg-blue bg-opacity-50 overflow-y-auto h-full w-full p-5"
         id="my-modal"
         onClick={handelClose}
       >
-        <div className="relative top-20 mx-auto p-2 border w-96 shadow-lg rounded-md bg-blue-800/30 backdrop-blur mt-7 min-w-[500px] ">
+        <div className="relative top-20 mx-auto p-2 border shadow-lg rounded-md bg-blue-800/30 backdrop-blur mt-7 min-w-[300px] w-full ">
           {/* Contenu du modal */}
-          <div className="grid grid-cols-1 gap-1 md:grid-cols-2 md:gap-4">
+          <div className="grid grid-cols-1 gap-1 md:grid-cols-2 md:gap-2">
             {/* card1*/}
             <Link
               to="/"
-              className="border border-white p-4 rounded-lg m-2 hover:scale-105 duration-700 "
+              className="border border-white p-4 rounded-lg m-2 hover:scale-105 duration-700 text-center"
             >
-              <FontAwesomeIcon icon={faTruckMedical} className="text-white" />
+              <FontAwesomeIcon icon={faTruckMedical} className="text-white text-2xl" />
 
-              <h4 className="text-lg font-bold text-white">Assurance</h4>
+              <h4 className="text-lg font-bold text-white ">Assurance</h4>
               <p className="text-white">
                 Protégez votre investissement avec nos offres d'assurances
                 compétitives.
@@ -48,9 +48,9 @@ const ModalService: React.FC<ServiceProps> = ({ isOpen, toggle }) => {
             {/* card2*/}
             <Link
               to="/"
-              className="border border-white p-4 rounded-lg m-2 hover:scale-105 duration-700"
+              className="border border-white p-4 rounded-lg m-2 hover:scale-105 duration-700 text-center"
             >
-              <FontAwesomeIcon icon={faPhone} className="text-white" />
+              <FontAwesomeIcon icon={faPhone} className="text-white text-2xl"  />
               <h4 className="text-lg font-bold text-white">Assistance</h4>
               <p className="text-white">
                 Béneficiez d'une assistance 24/7 pour tous vos besoins urgents.
@@ -59,9 +59,9 @@ const ModalService: React.FC<ServiceProps> = ({ isOpen, toggle }) => {
             {/* card3*/}
             <Link
               to="/"
-              className="border border-white p-4 rounded-lg m-2 hover:scale-105 duration-700"
+              className="border border-white p-4 rounded-lg m-2 hover:scale-105 duration-700 text-center"
             >
-              <FontAwesomeIcon icon={faGear} className="text-white" />
+              <FontAwesomeIcon icon={faGear} className="text-white text-2xl" />
               <h4 className="text-lg font-bold text-white">Maintenance</h4>
               <p className="text-white">
                 Gardez votre véhicule en parfait état avec nos services de
@@ -71,9 +71,9 @@ const ModalService: React.FC<ServiceProps> = ({ isOpen, toggle }) => {
             {/* card4*/}
             <Link
               to="/"
-              className="border border-white p-4 rounded-lg m-2 hover:scale-105 duration-700"
+              className="border border-white p-4 rounded-lg m-2 hover:scale-105 duration-700 text-center"
             >
-              <FontAwesomeIcon icon={faPenToSquare} className="text-white" />
+              <FontAwesomeIcon icon={faPenToSquare} className="text-white text-2xl" />
               <h4 className="text-lg font-bold text-white">
                 Extension de garantie
               </h4>

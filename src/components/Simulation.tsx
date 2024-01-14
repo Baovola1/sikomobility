@@ -41,7 +41,7 @@ const Simulation: React.FC<SimulationProps> = ({ isOpen, close }) => {
         className="fixed inset-0 bg-blue bg-opacity-50 overflow-y-auto h-full w-full"
         id="my-modal"
       >
-        <div className="relative top-20 mx-auto p-5 border w-96  shadow-lg rounded-md bg-blue-800/30 backdrop-blur">
+        <div className="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-blue-800/30 backdrop-blur mt-10">
           <div className="mt-3 text-center">
             <div className="mx-auto flex items-center justify-between">
               <h3 className="text-2xl font-bold leading-6  text-teal-400">
