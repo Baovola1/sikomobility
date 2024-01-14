@@ -17,7 +17,7 @@ const Simulation: React.FC<SimulationProps> = ({ isOpen, close }) => {
   const calculateMonthlyPayment = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    //  L''apport ne devrait pas être supérieur au montant du prêt
+    //  L'apport ne devrait pas être supérieur au montant du prêt
     if (downPayment >= loanAmount) {
       alert("L'apport ne peut pas être supérieur ou égal au montant du prêt.");
       return;
