@@ -47,7 +47,7 @@ const Simulation: React.FC<SimulationProps> = ({ isOpen, close }) => {
           <div className="mt-3 text-center">
             <div className="mx-auto flex items-center justify-between">
               <h3 className="text-2xl font-bold leading-6 text-teal-400">
-                Simulation
+               Simulation
               </h3>
               <button
                 onClick={close}
