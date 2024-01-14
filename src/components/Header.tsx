@@ -8,9 +8,11 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faGear } from "@fortawesome/free-solid-svg-icons";
 import { faTruckMedical } from "@fortawesome/free-solid-svg-icons";
 import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
+import Simulation from "./Simulation";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -167,7 +169,7 @@ export default function Header() {
               </li>
 
               <li>
-                <button className="bg-slate-800 hover:bg-blue-800 text-blue-700 py-2 px-3 rounded-lg mb-2 center border-4 border-blue-700 hover:text-white text-lg">
+                <button onClick={() => setIsModalOpen(true)} className="bg-slate-800 hover:bg-blue-800 text-blue-700 py-2 px-3 rounded-lg mb-2 center border-4 border-blue-700 hover:text-white text-lg">
                   Simulation
                 </button>
               </li>
@@ -175,6 +177,8 @@ export default function Header() {
           </nav>
         </div>
       </header>
+      {/* Ajout du modal en dehors de la balise header, mais toujours dans le composant de retour */}
+      <Simulation isOpen={isModalOpen} close={() => setIsModalOpen(false)} />
     </>
   );
 }
