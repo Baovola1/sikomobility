@@ -33,7 +33,7 @@ const ListAvis: React.FC<ListAvisProps> = ({ username, userImage, comment, ratin
 
   return (
     <div className="px-2">
-  <div className="p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800">
+  <div className="p-6 bg-slate-800 border border-gray-200 rounded-lg shadow dark:bg-gray-800">
     <div className="flex items-center mb-2">
       <img
         className="w-10 h-10 rounded-full"
@@ -43,7 +43,7 @@ const ListAvis: React.FC<ListAvisProps> = ({ username, userImage, comment, ratin
       <div className="text-sky-500 mr-2 p-2">{username}</div>
     </div>
     <div className="flex flex-col gap-2">
-      <p className="text-gray-300 text-sm">
+      <p className="text-gray-300 text-sm line-clamp-2">
         {comment}
       </p>
       <div className="flex items-center">
