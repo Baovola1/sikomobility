@@ -1,7 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import { faRocket } from "@fortawesome/free-solid-svg-icons";
+
 import "./Simulation.css";
+
 
 interface SimulationProps {
   isOpen: boolean;
@@ -44,7 +47,7 @@ const Simulation: React.FC<SimulationProps> = ({ isOpen, close }) => {
         <div className="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-blue-800/30 backdrop-blur mt-10">
           <div className="mt-3 text-center">
             <div className="mx-auto flex items-center justify-between">
-              <h3 className="text-2xl font-bold leading-6  text-teal-400">
+              <h3 className="text-2xl font-bold leading-6 text-teal-400">
                 Simulation
               </h3>
               <button
@@ -122,12 +125,13 @@ const Simulation: React.FC<SimulationProps> = ({ isOpen, close }) => {
                   className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
                 >
                   Faire une demande
+                  <FontAwesomeIcon icon={faRocket} className="ml-4" />
                 </button>
               </div>
             </form>
             <p className="text-xs italic mt-4 text-slate-100">
               *Simulation préliminaire non contractuelle. Un crédit vous engage
-              et doit être remboursé. V érifiez vos capacités de remboursement
+              et doit être remboursé. Vérifiez vos capacités de remboursement
               avant de vous engager. Des frais de dossiers peuvent s'appliquer.
             </p>
           </div>

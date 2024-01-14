@@ -1,6 +1,8 @@
 import logo from "../assets/logo.jpg";
 import { useEffect } from "react";
 import VanillaTilt from "vanilla-tilt";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 
 export default function Marchand() {
   useEffect(() => {
@@ -95,7 +97,9 @@ export default function Marchand() {
               type="submit"
               className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
             >
+              <FontAwesomeIcon icon={faGoogle} className="mr-2 " />
               Connexion with Google
+              
             </button>
 
             <div className="text-sm font-medium text-gray-500 dark:text-gray-300">
