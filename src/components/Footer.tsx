@@ -1,20 +1,22 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.jpg"
+import logo from "../assets/logo.jpg";
 
 export default function Footer() {
   return (
     <>
-      <footer className="bg-slate-800 text-white py-8 " >
+      <footer className="bg-slate-800 text-white py-8 ">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
-                <div className="flex gap-4">
-                    <img src={logo} alt="logo"className="w-10 h-10 rounded-full"/>
-                    <h2 className="text-2xl font-bold mb-2 text-blue-600">siko mobility</h2>
-                </div>
-              
+              <div className="flex gap-4">
+                <img src={logo} alt="logo" className="w-10 h-10 rounded-full" />
+                <h2 className="text-2xl font-bold mb-2 text-blue-600">
+                  siko mobility
+                </h2>
+              </div>
+
               <p className="mb-2">contact@sikomobility.com</p>
               <p className="mb-2">86 rue Dutot, 75015 Paris</p>
               <div className="flex space-x-4">

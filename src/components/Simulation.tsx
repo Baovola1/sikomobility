@@ -5,7 +5,6 @@ import { faRocket } from "@fortawesome/free-solid-svg-icons";
 
 import "./Simulation.css";
 
-
 interface SimulationProps {
   isOpen: boolean;
   close: () => void; // close est une fonction qui ne retourne rien

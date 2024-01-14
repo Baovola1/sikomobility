@@ -16,12 +16,17 @@ function App() {
 
   return (
     <BrowserRouter>
-      
       <Routes>
-        <Route path="/" element={<Layout><Home/></Layout>} />
+        <Route
+          path="/"
+          element={
+            <Layout>
+              <Home />
+            </Layout>
+          }
+        />
         <Route path="/marchand" element={<Marchand />} />
       </Routes>
-     
     </BrowserRouter>
   );
 }

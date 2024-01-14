@@ -10,7 +10,7 @@ import {
 
 interface ServiceProps {
   isOpen: boolean;
-  toggle: () => void; 
+  toggle: () => void;
 }
 
 const ModalService: React.FC<ServiceProps> = ({ isOpen, toggle }) => {
@@ -37,7 +37,10 @@ const ModalService: React.FC<ServiceProps> = ({ isOpen, toggle }) => {
               to="/"
               className="border border-white p-4 rounded-lg m-2 hover:scale-105 duration-700 text-center"
             >
-              <FontAwesomeIcon icon={faTruckMedical} className="text-white text-2xl" />
+              <FontAwesomeIcon
+                icon={faTruckMedical}
+                className="text-white text-2xl"
+              />
 
               <h4 className="text-lg font-bold text-white ">Assurance</h4>
               <p className="text-white">
@@ -50,7 +53,7 @@ const ModalService: React.FC<ServiceProps> = ({ isOpen, toggle }) => {
               to="/"
               className="border border-white p-4 rounded-lg m-2 hover:scale-105 duration-700 text-center"
             >
-              <FontAwesomeIcon icon={faPhone} className="text-white text-2xl"  />
+              <FontAwesomeIcon icon={faPhone} className="text-white text-2xl" />
               <h4 className="text-lg font-bold text-white">Assistance</h4>
               <p className="text-white">
                 Béneficiez d'une assistance 24/7 pour tous vos besoins urgents.
@@ -73,7 +76,10 @@ const ModalService: React.FC<ServiceProps> = ({ isOpen, toggle }) => {
               to="/"
               className="border border-white p-4 rounded-lg m-2 hover:scale-105 duration-700 text-center"
             >
-              <FontAwesomeIcon icon={faPenToSquare} className="text-white text-2xl" />
+              <FontAwesomeIcon
+                icon={faPenToSquare}
+                className="text-white text-2xl"
+              />
               <h4 className="text-lg font-bold text-white">
                 Extension de garantie
               </h4>
